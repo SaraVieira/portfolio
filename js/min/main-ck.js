@@ -1,0 +1,1 @@
+var app=angular.module("Portfolio",[]);app.controller("RandomPostsCtrl",function(t,n){n.get("articles.json").success(function(n,o,r,a){t.articles=n,t.last_element=t.articles[t.articles.length-1],t.Random=function(){return.5-Math.random()}}).error(function(t,n,o,r){})});
